@@ -1,0 +1,574 @@
+/*Imported fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Thonburi bold', sans-serif;
+    background-color: white;
+    /* platinum: #E5E4E2 */
+    font-size: 20px;
+    max-width: 100%;
+    line-height: 150%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+/* Nav */
+
+.navBar {
+    background-color: #1c2546; /* blå fargen: #293664 ---- Svart aktig: #0C090A */ 
+    opacity: 0.90;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+
+}
+
+
+#navButtons {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    vertical-align: middle;
+
+    }
+
+
+#navButtons a li {
+    display: block;
+    padding: 22px 20px;
+    float: right;
+    vertical-align: middle;
+    height: 75px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+
+}
+
+/* Nav Hover */
+
+#navButtons a li:hover {
+	/*hover color - blue: #4C5982 - black: #2A2728 */
+	background-color: #4C5982;
+    border-bottom: 3px solid #ff0874;
+    margin-bottom: -3px;
+    font-size: 1.2em;
+}
+
+/* Nav logo */
+
+#navLogo {
+    display: inline-block;
+    height: 75px;
+    margin: 0;
+    padding: 10px 10px 6px 10px;
+    float: left;
+}
+
+
+/* Header Background */
+
+header {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	background: url("img/forside.jpg") no-repeat;
+	background-size: cover;
+	
+
+
+}
+
+header .intro {
+	width: 100%;
+	height: 100%;
+	text-align: center; 
+	z-index: 2;
+}
+
+/* Header layout */
+
+.left {
+	height: 100vh;
+	width: 60vw;
+	float: left;
+	padding-left: 90px;
+	padding-top: 20vh;
+	padding-right: 20px;
+}
+
+.right {
+	height: 100vh;
+	width: 40vw;
+	float: left;
+	position: relative;
+}
+
+.right img {
+	max-width: 40vw;
+	max-height: 70vh;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#comingSoon {
+	padding-top: 5vh;
+}
+
+#comingSoon img {
+	max-width: 120px;
+	max-height: 50px;
+}
+
+
+
+
+/* Info sides */
+
+
+.infoSide {
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	border-bottom: 1px solid #2A2728;
+	padding-top: 10vh;
+	padding-left: 5vw;
+	padding-right: 40vw
+	
+	
+}
+
+/* How to use side */
+
+#readMore {
+	float: left;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+#readMore:hover , #backBtn a:hover  {
+	font-size: 1.3em;
+}
+
+.howToUse {
+
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	float: left;
+	
+	
+
+}
+
+.part {
+	width: 100vw;
+	min-height: 80vh;
+	height: auto;
+	float: left;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	border-top: 1px solid #2A2728;
+
+}
+#partOne {
+	padding-top: 15vh;
+}
+
+.partText {
+	width: 60vw;
+	height: auto;
+	float: left;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	
+}
+
+.partText h2 {
+	line-height: 3;
+	
+}
+
+.partImg {
+	width: 40vw;
+	height: auto;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.partImg img {
+	vertical-align: middle;
+	max-height: auto; 
+	max-width: 20vw;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	
+}
+
+
+#backBtn{
+	text-align: left;
+	font-size: 1.1em;
+	padding-left: 5vw;
+	padding-top: 5vh;
+	padding-bottom: 5vH;
+}
+
+
+
+/* Text Decoration */
+
+.left h1, .left h2 {
+	color: white;
+	line-height: 2;
+}
+
+h1 {
+	font-size: 35px;
+	font-family: 'open sans' sans-serif; 
+	color: #1c2546;
+	letter-spacing: 2px;
+	line-height: 45px;
+}
+
+h2 {
+
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'open sans' sans-serif; 
+	color: #293664;
+	line-height: 3;
+
+}
+
+
+
+.footer {
+	min-height: 30vh;
+	width: 100vw;
+	text-align: center;
+	border-top: 2px solid black;
+}
+
+
+
+
+/**** Screen size ****/
+
+
+/* Desktop version */
+@media only screen and (min-width: 1026px) {
+	.navCheck {
+		display: none;
+	}
+	
+	.navBar {
+		opacity: 0.92;
+	}
+}
+
+
+/* Tablet version */
+@media only screen and (min-width: 701px) and (max-width: 1025px) {
+
+	.navBar {
+		opacity: 1;
+	}
+
+	.navCheck {
+		display: none;
+	}
+
+	/* header layout - mobile */
+	.right {
+		width: 0;
+		height: 0;
+		float: none;
+		display: none;
+	}
+
+	.right img {
+		display: none;
+		
+
+	}
+
+	.left {
+		width: 100vw;
+		height: 100vh;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 25vh;
+	}
+
+	/* info - text layout */
+
+	.infoSide {
+		padding-top: 10vh;
+		padding-left: 5vw;
+		padding-right: 10vw;
+		}
+
+	/* how to use - responsive layout */
+
+.part {
+	width: 100vw;
+	min-height: 80vh;
+	height: auto;
+	float: left;
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+}
+
+#partOne {
+	padding-top: 10vh;
+}
+
+.partText {
+	width: 100vw;
+	height: auto;
+	float: left;
+	padding-left: 8vw;
+	padding-right: 8vw;
+	
+}
+.partImg {
+	width: 0;
+	height: 0;
+	float: none;
+
+}
+
+.partImg img {
+	width: 0;
+	height: 0;
+	padding: 0;
+	
+}
+
+
+	/* Text size - tablett */
+
+	h1 {
+		font-size: 60px;
+		font-weight: normal;
+	}
+
+	h2 {
+		font-size: 25px;
+		font-weight: normal;
+	}
+
+}
+
+
+/* Mobile version */
+@media only screen and (max-width: 740px) {
+
+	.navBar {
+		opacity: 1;
+	}
+	
+
+	/* Navbar responsive dropdown menu */
+	.navBar #navButtons {
+	    clear: both;
+	    max-height: 0;
+	    transition: max-height .3s ease-out;
+	}
+
+	.navBar .navIcon {
+		cursor: pointer;
+	    display: inline-block;
+	    float: right;
+	    padding: 28px 20px;
+	    position: relative;
+	    user-select: none;
+	    margin-top: 10px;
+	    margin-right: 10px;
+
+	}
+
+	.navBar .navIcon .navLine {
+		background: #ffffff;
+	    display: block;
+	    height: 3px;
+	    position: relative;
+	    transition: background .3s ease-out;
+	    width: 20px;
+
+	}
+
+	.navBar .navIcon .navLine:before, .navBar .navIcon .navLine:after {
+	    background: #ffffff;
+	    content:'';
+	    display: block;
+	    height: 100%;
+	    position: absolute;
+	    transition: all .3s ease-out;
+	    width: 100%;
+
+	}
+
+	.navBar .navIcon .navLine:before {
+	    top: 5px;
+	    
+	}
+
+	.navBar .navIcon .navLine:after {
+	    top: -5px;
+	    
+	}
+
+	.navBar .navCheck {
+	    display: none;
+	}
+
+	.navBar .navCheck:checked~#navButtons {
+	    max-height: 400px;
+	}
+
+
+	.navBar .navCheck:checked~.navIcon .navLine{
+	    background: transparent;
+
+	}
+
+
+	.navBar .navCheck:checked~.navIcon .navLine:before {
+	    transform: rotate(-45deg);
+	}
+
+	.navBar .navCheck:checked~.navIcon .navLine:after {
+	    transform: rotate(45deg);
+	}
+
+
+	.navBar .navCheck:checked~.navIcon .navLine:before, .navBar .navCheck:checked~.navIcon .navLine:after {
+	    top: 0;
+	}
+
+	#navButtons a li {
+    width: 100%;
+    float: none;
+    text-align: center;
+	}
+
+
+	#navButtons a li:hover {
+	background-color: #4C5982;
+    font-size: 1.2em;
+    border-bottom: none;
+    margin-bottom: none;
+	}
+
+
+	/* header layout - mobile */
+	.right {
+		width: 0;
+		height: 0;
+		float: none;
+		display: none;
+	}
+
+	.right img {
+		display: none;
+		
+
+	}
+
+	.left {
+		width: 100vw;
+		height: 100vh;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 10vh;
+	}
+
+	/* info text layout */
+	.infoSide {
+		padding-top: 10vh;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		}
+
+
+	/* how to use - responsive layout */
+
+.part {
+	width: 100vw;
+	min-height: 80vh;
+	height: auto;
+	float: left;
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+}
+
+#partOne {
+	padding-top: 10vh;
+}
+
+.partText {
+	width: 100vw;
+	height: auto;
+	float: left;
+	padding-left: 8vw;
+	padding-right: 8vw;
+	
+}
+.partImg {
+	width: 0;
+	height: 0;
+	float: none;
+
+}
+
+.partImg img {
+	width: 0;
+	height: 0;
+	padding: 0;
+	
+}
+
+	/* Text size - tablett */
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
