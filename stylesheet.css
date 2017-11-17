@@ -159,8 +159,9 @@ header .intro {
 	padding-bottom: 5vh;
 }
 
-#readMore:hover , #backBtn a:hover  {
+#readMore:hover {
 	font-size: 1.3em;
+	text-decoration: none;
 }
 
 .howToUse {
@@ -173,7 +174,6 @@ header .intro {
 	
 
 }
-
 .part {
 	width: 100vw;
 	min-height: 80vh;
@@ -221,14 +221,65 @@ header .intro {
 }
 
 
-#backBtn{
-	text-align: left;
-	font-size: 1.1em;
-	padding-left: 5vw;
-	padding-top: 5vh;
-	padding-bottom: 5vH;
+/* Footer */
+
+.footer {
+	height: 40vh;
+	width: 100vw;
+	float: left;
+	text-align: center;
+	border-top: 2px solid black;
+	background-color: #0C090A;
+	color: white;
 }
 
+
+
+.topBtn {
+	width: 100vw;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding-left: 3vw;
+}
+
+.topBtn a {
+	text-decoration: none;
+	color: white;
+}
+
+.topBtn a:hover {
+	font-size: 1.2em;
+	color: purple;
+}
+
+.contactUs {
+	width: 50vw;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding-top: 5vh;
+	padding-left: 20vw;
+}
+
+.contactUs img {
+	max-height: 20px;
+	max-width: 20px;
+}
+
+.donation {
+	width: 50vw;
+	height: auto;
+	float: left;
+	padding-top: 5vh;
+	padding-right: 10vw;
+}
+
+.donation img {
+	width: 80px;
+	height: 50px;
+
+}
 
 
 /* Text Decoration */
@@ -256,14 +307,6 @@ h2 {
 
 }
 
-
-
-.footer {
-	min-height: 30vh;
-	width: 100vw;
-	text-align: center;
-	border-top: 2px solid black;
-}
 
 
 
@@ -373,6 +416,7 @@ h2 {
 		font-size: 25px;
 		font-weight: normal;
 	}
+
 
 }
 
@@ -543,6 +587,54 @@ h2 {
 	height: 0;
 	padding: 0;
 	
+}
+
+
+
+/* Footer */
+
+.footer {
+	height: auto;
+	width: 100vw;
+	float: left;
+	text-align: center;
+	border-top: 2px solid black;
+	background-color: #0C090A;
+	color: white;
+}
+
+
+
+.topBtn {
+	width: 100vw;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding-left: 3vw;
+}
+
+
+.topBtn a:hover {
+	font-size: 1.2em;
+	color: purple;
+}
+
+.contactUs {
+	width: 100vw;
+	text-align: left;
+	padding-top: 5vh;
+	padding-left: 5vh;
+}
+
+.donation {
+	width: 100vw;
+	text-align: center;
+}
+
+.donation img {
+	width: 70px;
+	height: 40px;
+
 }
 
 	/* Text size - tablett */
