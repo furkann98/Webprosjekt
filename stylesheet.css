@@ -24,7 +24,7 @@ a {
 /* Nav */
 
 .navBar {
-    background-color: #0C090A; /* blå fargen: #293664 ---- Svart aktig: #0C090A */ 
+    background-color: #293664; /* blå fargen: #293664 ---- Svart aktig: #0C090A */
     opacity: 0.90;
     position: fixed;
     width: 100%;
@@ -87,7 +87,7 @@ header {
 	z-index: 1;
 	background: url("img/forside.jpg") no-repeat;
 	background-size: cover;
-	
+
 
 
 }
@@ -95,7 +95,7 @@ header {
 header .intro {
 	width: 100%;
 	height: 100%;
-	text-align: center; 
+	text-align: center;
 	z-index: 2;
 }
 
@@ -124,14 +124,27 @@ header .intro {
 	bottom: 0;
 	right: 0;
 }
+
+/*FURKAN SE PÅ DISSE TO UNDER, OM DE ER RESPONSIVE #WELCOME ------------------------------------------*/
+#welcome h1{
+  font-size: 29px;
+  padding-bottom: vh;
+}
+#welcome-end h1{
+  font-size: 15px;
+}
+
+
 #comingSoon {
-	padding-top: 5vh;
+	/* padding-top: 3vh; */
 }
 
 #comingSoon img {
 	max-width: 120px;
 	max-height: 50px;
 }
+
+
 
 
 
@@ -147,8 +160,8 @@ header .intro {
 	padding-top: 10vh;
 	padding-left: 5vw;
 	padding-right: 40vw
-	
-	
+
+
 }
 
 /* How to use side */
@@ -170,8 +183,8 @@ header .intro {
 	min-height: 100vh;
 	height: auto;
 	float: left;
-	
-	
+
+
 
 }
 .part {
@@ -194,12 +207,12 @@ header .intro {
 	float: left;
 	padding-left: 5vw;
 	padding-right: 5vw;
-	
+
 }
 
 .partText h2 {
 	line-height: 3;
-	
+
 }
 
 .partImg {
@@ -213,11 +226,11 @@ header .intro {
 
 .partImg img {
 	vertical-align: middle;
-	max-height: auto; 
+	max-height: auto;
 	max-width: 20vw;
 	padding-top: 15%;
 	padding-bottom: 15%;
-	
+
 }
 
 
@@ -308,7 +321,7 @@ header .intro {
 
 h1 {
 	font-size: 35px;
-	font-family: 'open sans' sans-serif; 
+	font-family: 'open sans' sans-serif;
 	color: #1c2546;
 	letter-spacing: 2px;
 	line-height: 45px;
@@ -318,7 +331,7 @@ h2 {
 
 	font-size: 20px;
 	font-weight: normal;
-	font-family: 'open sans' sans-serif; 
+	font-family: 'open sans' sans-serif;
 	color: #293664;
 	line-height: 3;
 
@@ -336,7 +349,7 @@ h2 {
 	.navCheck {
 		display: none;
 	}
-	
+
 	.navBar {
 		opacity: 0.92;
 	}
@@ -364,7 +377,7 @@ h2 {
 
 	.right img {
 		display: none;
-		
+
 
 	}
 
@@ -405,7 +418,7 @@ h2 {
 	float: left;
 	padding-left: 8vw;
 	padding-right: 8vw;
-	
+
 }
 .partImg {
 	width: 0;
@@ -418,7 +431,7 @@ h2 {
 	width: 0;
 	height: 0;
 	padding: 0;
-	
+
 }
 
 
@@ -444,7 +457,7 @@ h2 {
 	.navBar {
 		opacity: 1;
 	}
-	
+
 
 	/* Navbar responsive dropdown menu */
 	.navBar #navButtons {
@@ -488,12 +501,12 @@ h2 {
 
 	.navBar .navIcon .navLine:before {
 	    top: 5px;
-	    
+
 	}
 
 	.navBar .navIcon .navLine:after {
 	    top: -5px;
-	    
+
 	}
 
 	.navBar .navCheck {
@@ -549,7 +562,7 @@ h2 {
 
 	.right img {
 		display: none;
-		
+
 
 	}
 
@@ -590,7 +603,7 @@ h2 {
 	float: left;
 	padding-left: 8vw;
 	padding-right: 8vw;
-	
+
 }
 .partImg {
 	width: 0;
@@ -603,7 +616,7 @@ h2 {
 	width: 0;
 	height: 0;
 	padding: 0;
-	
+
 }
 
 
@@ -668,16 +681,3 @@ h2 {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
