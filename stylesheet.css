@@ -176,7 +176,6 @@ header .intro {
 .arrow img:hover {
 	width: 40px;
 	height: 40px;
-	text-align: center;
 
 }
 
@@ -440,6 +439,12 @@ h2 {
 
 }
 
+.arrow img:hover {
+	width: 25px;
+	height: 25px;
+
+}
+
 
 	/* Text size - tablett */
 
@@ -585,6 +590,12 @@ h2 {
 		padding-top: 10vh;
 		padding-left: 5vw;
 		padding-right: 5vw;
+		}
+
+
+	.arrow img:hover {
+		width: 25px;
+		height: 25px;
 		}
 
 
