@@ -145,18 +145,42 @@ header .intro {
 	width: 100vw;
 	height: 100vh;
 	float: left;
-	padding-top: 10vh;
-	padding-left: 5vw;
-	padding-right: 40vw;
 	position: relative;
 
 
 }
 
+.infoSideText {
+	width: 60vw;
+	height: 95vh;
+	float: left;
+	padding-top: 10vh;
+	padding-left: 5vw;
+
+}
+
+.infoSideImg {
+	width: 40vw;
+	height: 95vh;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	
+}
+
+.infoSideImg img {
+	vertical-align: middle;
+	max-height: auto;
+	max-width: 15vw;
+	padding-top: 20vh;
+	
+}
+
+
 .arrow {
 	float:left;
 	width: 100vw;
-	height: auto;
+	height: 5vh;
 	position: absolute;  
 	bottom: 0;
 	right: 0;
@@ -166,16 +190,16 @@ header .intro {
 }
 
 .arrow img {
-	width: 25px;
-	height: 25px;
+	width: 4vw;
+	height: 4vh;
 	text-align: center;
 	margin: 0;
 	padding: 0;
 }
 
 .arrow img:hover {
-	width: 40px;
-	height: 40px;
+	width: 5vw;
+	height: 5vh;
 
 }
 
@@ -417,13 +441,41 @@ h2 {
 		padding-top: 25vh;
 	}
 
-	/* info - text layout */
+	/* info - responsive layout */
 
-	.infoSide {
-		padding-top: 10vh;
-		padding-left: 5vw;
-		padding-right: 10vw;
-		}
+
+.infoSideText {
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	padding-top: 10vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	border-bottom: 1px solid #2A2728;
+
+}
+
+.infoSideImg {
+	width: 0;
+	height: 0;
+	
+}
+
+.infoSideImg img {
+	display: none;
+	
+}
+
+
+.arrow {
+	width: 0;
+	height: 0;
+
+}
+
+.arrow img{
+	display: none;
+}
 
 	/* how to use - responsive layout */
 
@@ -449,16 +501,15 @@ h2 {
 
 }
 .partImg {
-	width: 0;
-	height: 0;
-	float: none;
+	width: 100vw;
+	height: auto;
+	float: left;
 
 }
 
 .partImg img {
-	width: 0;
-	height: 0;
-	padding: 0;
+	max-height: auto;
+	max-width: 50%;
 
 }
 
@@ -614,24 +665,41 @@ h2 {
 		padding-top: 10vh;
 	}
 
-	/* info text layout */
-	.infoSide {
-		padding-top: 10vh;
-		padding-left: 5vw;
-		padding-right: 5vw;
-		}
+	/* info - responsive layout */
 
 
-	.arrow img:hover {
-		width: 25px;
-		height: 25px;
-		}
+.infoSideText {
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	padding-top: 10vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	border-bottom: 1px solid #2A2728;
 
-	.backHome img:hover {
-		width: 25px;
-		height: 25px;
+}
 
-	}
+.infoSideImg {
+	width: 0;
+	height: 0;
+	
+}
+
+.infoSideImg img {
+	display: none;
+	
+}
+
+
+.arrow {
+	width: 0;
+	height: 0;
+
+}
+
+.arrow img{
+	display: none;
+}
 
 	/* how to use - responsive layout */
 
@@ -657,17 +725,15 @@ h2 {
 
 }
 .partImg {
-	width: 0;
-	height: 0;
-	float: none;
+	width: 100vw;
+	height: auto;
+	float: left;
 
 }
 
 .partImg img {
-	width: 0;
-	height: 0;
-	padding: 0;
-
+	max-height: auto;
+	max-width: 65%;
 }
 
 
