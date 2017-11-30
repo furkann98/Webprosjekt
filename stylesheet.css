@@ -24,7 +24,7 @@ a {
 /* Nav */
 
 .navBar {
-    background-color: #293664; /* blå fargen: #293664 ---- Svart aktig: #0C090A */
+    background-color: #0C090A; /* blå fargen: #293664 ---- Svart aktig: #0C090A */
     opacity: 0.90;
     position: fixed;
     width: 100%;
@@ -61,7 +61,7 @@ a {
 #navButtons a li:hover {
 	/*hover color - blue: #4C5982 - black: #2A2728 */
 	background-color: #2A2728;
-    border-bottom: 3px solid rgb(42,113,182);
+    border-bottom: 3px solid #FF0874;
     margin-bottom: -3px;
     font-size: 1.2em;
 }
@@ -125,14 +125,6 @@ header .intro {
 	right: 0;
 }
 
-/*FURKAN SE PÅ DISSE TO UNDER, OM DE ER RESPONSIVE #WELCOME ------------------------------------------*/
-#welcome h1{
-  font-size: 29px;
-  padding-bottom: vh;
-}
-#welcome-end h1{
-  font-size: 15px;
-}
 
 
 #comingSoon {
@@ -146,9 +138,6 @@ header .intro {
 
 
 
-
-
-
 /* Info sides */
 
 
@@ -156,13 +145,45 @@ header .intro {
 	width: 100vw;
 	height: 100vh;
 	float: left;
-	border-bottom: 1px solid #2A2728;
 	padding-top: 10vh;
 	padding-left: 5vw;
-	padding-right: 40vw
+	padding-right: 40vw;
+	position: relative;
 
 
 }
+
+.arrow {
+	float:left;
+	width: 100vw;
+	height: auto;
+	position: absolute;  
+	bottom: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	border-bottom: 1px solid #2A2728;
+}
+
+.arrow img {
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.arrow img:hover {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+
+}
+
+.arrow a, .arrow h2, .arrow img {
+	line-height: .10px;
+}
+
 
 /* How to use side */
 
@@ -247,25 +268,6 @@ header .intro {
 	padding-bottom: 5vh;
 }
 
-
-
-.topBtn {
-	width: 100vw;
-	height: auto;
-	float: left;
-	text-align: left;
-	padding-left: 3vw;
-}
-
-.topBtn a {
-	text-decoration: none;
-	color: white;
-}
-
-.topBtn a:hover {
-	font-size: 1.2em;
-	color: purple;
-}
 
 .contactUs {
 	width: 50vw;
@@ -352,6 +354,10 @@ h2 {
 
 	.navBar {
 		opacity: 0.92;
+	}
+
+	#comingSoon {
+		padding-top: 5vh;
 	}
 }
 
