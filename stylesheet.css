@@ -24,7 +24,7 @@ a {
 /* Nav */
 
 .navBar {
-    background-color: #1c2546; /* blå fargen: #293664 ---- Svart aktig: #0C090A */ 
+    background-color: #293664; /* blå fargen: #293664 ---- Svart aktig: #0C090A */
     opacity: 0.90;
     position: fixed;
     width: 100%;
@@ -60,8 +60,8 @@ a {
 
 #navButtons a li:hover {
 	/*hover color - blue: #4C5982 - black: #2A2728 */
-	background-color: #4C5982;
-    border-bottom: 3px solid #ff0874;
+	background-color: #2A2728;
+    border-bottom: 3px solid rgb(42,113,182);
     margin-bottom: -3px;
     font-size: 1.2em;
 }
@@ -87,7 +87,7 @@ header {
 	z-index: 1;
 	background: url("img/forside.jpg") no-repeat;
 	background-size: cover;
-	
+
 
 
 }
@@ -95,7 +95,7 @@ header {
 header .intro {
 	width: 100%;
 	height: 100%;
-	text-align: center; 
+	text-align: center;
 	z-index: 2;
 }
 
@@ -124,14 +124,27 @@ header .intro {
 	bottom: 0;
 	right: 0;
 }
+
+/*FURKAN SE PÅ DISSE TO UNDER, OM DE ER RESPONSIVE #WELCOME ------------------------------------------*/
+#welcome h1{
+  font-size: 29px;
+  padding-bottom: vh;
+}
+#welcome-end h1{
+  font-size: 15px;
+}
+
+
 #comingSoon {
-	padding-top: 5vh;
+	/* padding-top: 3vh; */
 }
 
 #comingSoon img {
 	max-width: 120px;
 	max-height: 50px;
 }
+
+
 
 
 
@@ -147,8 +160,8 @@ header .intro {
 	padding-top: 10vh;
 	padding-left: 5vw;
 	padding-right: 40vw
-	
-	
+
+
 }
 
 /* How to use side */
@@ -159,8 +172,9 @@ header .intro {
 	padding-bottom: 5vh;
 }
 
-#readMore:hover , #backBtn a:hover  {
+#readMore:hover {
 	font-size: 1.3em;
+	text-decoration: none;
 }
 
 .howToUse {
@@ -169,11 +183,10 @@ header .intro {
 	min-height: 100vh;
 	height: auto;
 	float: left;
-	
-	
+
+
 
 }
-
 .part {
 	width: 100vw;
 	min-height: 80vh;
@@ -194,12 +207,12 @@ header .intro {
 	float: left;
 	padding-left: 5vw;
 	padding-right: 5vw;
-	
+
 }
 
 .partText h2 {
 	line-height: 3;
-	
+
 }
 
 .partImg {
@@ -213,22 +226,90 @@ header .intro {
 
 .partImg img {
 	vertical-align: middle;
-	max-height: auto; 
+	max-height: auto;
 	max-width: 20vw;
 	padding-top: 15%;
 	padding-bottom: 15%;
-	
+
 }
 
 
-#backBtn{
+/* Footer */
+
+.footer {
+	height: auto;
+	width: 100vw;
+	float: left;
+	text-align: center;
+	border-top: 2px solid black;
+	background-color: #0C090A;
+	color: white;
+	padding-bottom: 5vh;
+}
+
+
+
+.topBtn {
+	width: 100vw;
+	height: auto;
+	float: left;
 	text-align: left;
-	font-size: 1.1em;
-	padding-left: 5vw;
-	padding-top: 5vh;
-	padding-bottom: 5vH;
+	padding-left: 3vw;
 }
 
+.topBtn a {
+	text-decoration: none;
+	color: white;
+}
+
+.topBtn a:hover {
+	font-size: 1.2em;
+	color: purple;
+}
+
+.contactUs {
+	width: 50vw;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding-top: 5vh;
+	padding-left: 20vw;
+}
+
+.contactUs img {
+	max-height: 20px;
+	max-width: 20px;
+}
+
+.donation {
+	width: 50vw;
+	height: auto;
+	float: left;
+	padding-top: 5vh;
+	padding-right: 10vw;
+}
+
+.donation img {
+	width: 80px;
+	height: 50px;
+
+}
+
+/* Copyright */;
+
+.copyright {
+	height: auto;
+	width: 100vw;
+	float: left;
+	background-color: white;
+	color: #0C090A;
+	font-size: 15px;
+	text-align: center;
+}
+
+.copyright p {
+	text-align: center;
+}
 
 
 /* Text Decoration */
@@ -240,7 +321,7 @@ header .intro {
 
 h1 {
 	font-size: 35px;
-	font-family: 'open sans' sans-serif; 
+	font-family: 'open sans' sans-serif;
 	color: #1c2546;
 	letter-spacing: 2px;
 	line-height: 45px;
@@ -250,20 +331,12 @@ h2 {
 
 	font-size: 20px;
 	font-weight: normal;
-	font-family: 'open sans' sans-serif; 
+	font-family: 'open sans' sans-serif;
 	color: #293664;
 	line-height: 3;
 
 }
 
-
-
-.footer {
-	min-height: 30vh;
-	width: 100vw;
-	text-align: center;
-	border-top: 2px solid black;
-}
 
 
 
@@ -276,7 +349,7 @@ h2 {
 	.navCheck {
 		display: none;
 	}
-	
+
 	.navBar {
 		opacity: 0.92;
 	}
@@ -304,7 +377,7 @@ h2 {
 
 	.right img {
 		display: none;
-		
+
 
 	}
 
@@ -345,7 +418,7 @@ h2 {
 	float: left;
 	padding-left: 8vw;
 	padding-right: 8vw;
-	
+
 }
 .partImg {
 	width: 0;
@@ -358,7 +431,7 @@ h2 {
 	width: 0;
 	height: 0;
 	padding: 0;
-	
+
 }
 
 
@@ -374,6 +447,7 @@ h2 {
 		font-weight: normal;
 	}
 
+
 }
 
 
@@ -383,7 +457,7 @@ h2 {
 	.navBar {
 		opacity: 1;
 	}
-	
+
 
 	/* Navbar responsive dropdown menu */
 	.navBar #navButtons {
@@ -427,12 +501,12 @@ h2 {
 
 	.navBar .navIcon .navLine:before {
 	    top: 5px;
-	    
+
 	}
 
 	.navBar .navIcon .navLine:after {
 	    top: -5px;
-	    
+
 	}
 
 	.navBar .navCheck {
@@ -488,7 +562,7 @@ h2 {
 
 	.right img {
 		display: none;
-		
+
 
 	}
 
@@ -529,7 +603,7 @@ h2 {
 	float: left;
 	padding-left: 8vw;
 	padding-right: 8vw;
-	
+
 }
 .partImg {
 	width: 0;
@@ -542,7 +616,55 @@ h2 {
 	width: 0;
 	height: 0;
 	padding: 0;
-	
+
+}
+
+
+
+/* Footer */
+
+.footer {
+	height: auto;
+	width: 100vw;
+	float: left;
+	text-align: center;
+	border-top: 2px solid black;
+	background-color: #0C090A;
+	color: white;
+}
+
+
+
+.topBtn {
+	width: 100vw;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding-left: 3vw;
+}
+
+
+.topBtn a:hover {
+	font-size: 1.2em;
+	color: purple;
+}
+
+.contactUs {
+	width: 100vw;
+	text-align: left;
+	padding-top: 5vh;
+	padding-left: 5vh;
+}
+
+.donation {
+	width: 100vw;
+	text-align: center;
+}
+
+.donation img {
+	width: 70px;
+	height: 40px;
+
 }
 
 	/* Text size - tablett */
@@ -559,16 +681,3 @@ h2 {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
