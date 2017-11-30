@@ -253,6 +253,29 @@ header .intro {
 
 }
 
+.backHome {
+	float: left;
+	width: 100vw;
+	height: 50px;
+
+	text-align: center;
+
+}
+
+.backHome img {
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.backHome img:hover {
+	width: 40px;
+	height: 40px;
+
+}
+
 
 /* Footer */
 
@@ -296,8 +319,8 @@ header .intro {
 
 }
 
-/* Copyright */;
-
+/* Copyright */
+/*
 .copyright {
 	height: auto;
 	width: 100vw;
@@ -311,7 +334,7 @@ header .intro {
 .copyright p {
 	text-align: center;
 }
-
+*/
 
 /* Text Decoration */
 
@@ -440,6 +463,12 @@ h2 {
 }
 
 .arrow img:hover {
+	width: 25px;
+	height: 25px;
+
+}
+
+.backHome img:hover {
 	width: 25px;
 	height: 25px;
 
@@ -598,6 +627,11 @@ h2 {
 		height: 25px;
 		}
 
+	.backHome img:hover {
+		width: 25px;
+		height: 25px;
+
+	}
 
 	/* how to use - responsive layout */
 
