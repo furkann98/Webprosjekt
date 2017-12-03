@@ -3,6 +3,7 @@
 
 	*, *:before, *:after {
 	  box-sizing: border-box;
+
 	}
 
 	body {
@@ -159,8 +160,7 @@
 		height: 100vh;
 		float: left;
 		position: relative;
-
-
+		overflow-x: hidden;
 	}
 
 	.infoSideText {
@@ -261,6 +261,7 @@
 		padding-top: 10vh;
 		padding-bottom: 10vh;
 		border-top: 1px solid #2A2728;
+		overflow-x: hidden;
 
 	}
 	#partOne {
